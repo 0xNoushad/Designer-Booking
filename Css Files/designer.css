@@ -122,86 +122,104 @@ nav a.contact_btn:hover {
   transform: scaleX(1.1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.543);
 }
+nav a.contact_btn_mobile{
+  display: none;
+}
 
 /* <====================================================== Herobox Coded Here ======================================================> */
-
-.herobox{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* General styles for .herobox */
+.herobox {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.herobox h2{
-    font-family: "SF Pro";
-    font-size: 16px;
-    letter-spacing: 6px;
-    color: #f78c00;
+.herobox h2 {
+  font-family: "SF Pro";
+  font-size: 16px;
+  letter-spacing: 6px;
+  color: #f78c00;
 }
-.herobox h1{
-    font-family: "Media";
-    font-size: 95px;
-    text-align: center;
-    width: 80%;
-    margin-top: 20px;
+
+.herobox h1 {
+  font-family: "Media";
+  font-size: 95px;
+  text-align: center;
+  width: 80%;
+  margin-top: 20px;
 }
-.herobox a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 55px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-decoration: none;
-    font-family: "SF Pro";
-    color: black;
-    margin-top: 30px;
-    transform-origin: center;
-    transition: .3s ease;
+
+.herobox a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 55px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "SF Pro";
+  color: black;
+  margin-top: 30px;
+  transform-origin: center;
+  transition: .3s ease;
 }
-.herobox a:hover{
-    transform: scaleX(1.1);
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.331);
+
+.herobox a:hover {
+  transform: scaleX(1.1);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.331);
 }
-.herobox-auto-slider{
-    width: 35%;
-    height: 100px;
-    overflow: hidden;
-    position: absolute;
-    bottom: 5%;
+
+.herobox-auto-slider {
+  width: 35%;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 5%;
 }
-.herobox-slider-holder{
-    width: 150%;
-    height: 100%;
-    display: flex;
-    position: absolute;
-    left: 100%;
-    justify-content: space-between;
-    animation: move 20s linear infinite;
+
+.herobox-slider-holder {
+  width: 150%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  left: 100%;
+  justify-content: space-between;
+  animation: move 20s linear infinite;
 }
+
 @keyframes move {
-    from{
-        left: 100%;
-    }
-    to{    left: -150%;}
-}
-.herobox-slider-holder-1{
-    width: 15%;
-    height: 100%;
-    overflow: hidden;
-}
-.herobox-slider-holder-1 img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  from {
+      left: 100%;
+  }
+  to {
+      left: -150%;
+  }
 }
 
+.herobox-slider-holder-1 {
+  width: 15%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.herobox-slider-holder-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+ .herobox-slider-holder-2 {
+  width: 15%;
+  height: 100%;
+  overflow: hidden;
+}
 /* <====================================================== Section 1 Coded Here ======================================================> */
 
 .section-1{
@@ -1174,3 +1192,5 @@ nav a.contact_btn:hover {
   color: white;
   font-size: 20px;
 }
+ 
+ 

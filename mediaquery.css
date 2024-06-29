@@ -53,62 +53,95 @@
         width: 180px;
         font-size: 15px;
     }
+
 }
-
-@media screen and (max-width : 768px) {
-
-    .cursor{
+@media screen and (max-width: 768px) {
+    .cursor {
         display: none;
     }
-
-    nav{
-        padding: 0 70px 0 20px;
+    
+    nav {
+        padding: 0 20px; /* Adjusted padding for the nav */
+        display: flex;
+        justify-content: space-between; /* Align items in nav */
+        align-items: center;
     }
-    nav ul{
-        display: none;
+    
+    nav ul {
+        display: none; /* Hide the nav ul */
     }
-
-    .nav_logo{
-        width: auto;
+    
+    .nav_logo {
+        width: auto; /* Allow logo to adjust width as needed */
     }
-    .toggle-icon{
-        display: block;
+    
+    .toggle-icon {
+        display:none; /* Display the toggle icon */
     }
-    .herobox .passion_1 a{
+    
+    .herobox .intro {
+        font-size: 20px;
+    }
+    
+    .herobox .passion_1,
+    .herobox .passion_2,
+    .herobox .passion_1_outline,
+    .herobox .passion_2_outline {
+        width: 90%;
+        height: 22%; /* Adjusted height for passion sections */
+    }
+    
+    .herobox .passion_1 a,
+    .herobox .passion_1_outline a {
         font-size: 130px;
     }
-    .herobox .passion_1_outline a{
-        font-size: 130px;
-    }
-    .herobox .passion_2{
-        width: 90%;
-        height: 22%;
-    }
-    .herobox .passion_2 a{
+    
+    .herobox .passion_2 a,
+    .herobox .passion_2_outline a {
         font-size: 115px;
     }
-    .herobox .passion_2_outline{
-        width: 90%;
-        height: 22%;
-    }
-    .herobox .passion_2_outline a{
-        font-size: 115px;
-    }
-    .herobox_image{
+    
+    .herobox_image {
         height: 68%;
         width: 42%;
         top: 18%;
     }
-    .herobox p{
+    
+    .herobox p {
         bottom: 28%;
         left: 3%;
         font-size: 16px;
     }
-    .herobox a.designer_btn{
-        left: 28%;
-        bottom: 8%;
+    
+    .herobox .button_container {
+        display: flex;
+        justify-content: space-between; /* Space between buttons */
+        margin-top: 20px; /* Space above the buttons */
+        flex-wrap: wrap; /* Allow buttons to wrap */
     }
     
+    .herobox a.designer_btn {
+        font-size: 15px;
+        padding: 10px 20px; /* Padding for buttons */
+        text-align: center; /* Center text within buttons */
+        flex: 1; /* Allow buttons to grow and shrink */
+        min-width: 200px; /* Minimum width for buttons */
+        max-width: 200px; /* Maximum width for buttons */
+        margin-bottom: 10px; /* Bottom margin for spacing */
+        margin-right: 10px; /* Right margin for spacing */
+    }
+    
+    .herobox a.photographer_btn {
+        display: none; /* Hide photographer button on mobile */
+    }
+
+  .toggle_menu{
+    display: none;
+  }
+    
+ 
+
 }
+ 
 
 

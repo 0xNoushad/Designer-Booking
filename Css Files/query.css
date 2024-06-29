@@ -1,0 +1,248 @@
+
+@media screen and (max-width :768px) {
+  /*nav ka hai */
+  
+    nav {
+      width: 100%;
+      height: 80px; /* Adjust height for mobile */
+      position: fixed;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      font-family: "SF Pro", sans-serif; /* Update font family */
+      padding: 0 20px; /* Adjust padding for mobile */
+      z-index: 1000; /* Increase z-index to ensure it stays above other content */
+  }
+ 
+
+
+  
+  .nav_logo {
+      width: 30%; /* Adjust width for mobile */
+      height: 100%;  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+  }
+  
+  .nav_logo img {
+      width: 100%;
+      max-width: 100%; /* Ensure logo scales down properly */
+      height: 120%; /* Maintain aspect ratio */
+      object-fit: contain; /* Adjust image fit as needed */
+      pointer-events: none;
+  }
+
+ nav ul li{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    }
+ nav ul li a{
+  display: none;
+ color: #000;
+ }
+ 
+ nav a.contact_btn{
+    display: none;
+ }
+  
+  nav a.contact_btn{
+      display: inline-block;
+      min-width: 120px; /* Adjust minimum width for button */
+      height: 40px; /* Adjust height for button */
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Combine transitions */
+  }
+  
+  nav a.contact_btn:hover {
+      transform: scale(1.05);  
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);  
+  }
+
+
+  
+  }
+
+  /* herobox */
+  /* Mobile styles */
+@media (max-width: 768px) {
+    .herobox {
+        padding: 20px;
+    }
+  
+    .herobox h2 {
+        font-size: 42px;
+        letter-spacing: 4px;
+        text-align:center ;
+    }
+  
+    .herobox h1 {
+        font-size: 40px;
+        width: 100%;
+        margin-top: 10px;
+    }
+  
+    .herobox a {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+  
+    .herobox-auto-slider {
+        width: 80%;
+        height: 80px;
+        
+    }
+  
+    .herobox-slider-holder {
+        width: 200%;
+    }
+  
+    .herobox-slider-holder-1 {
+        width: 25%;
+    }
+  }
+  
+  /* Smaller mobile styles */
+  @media (max-width: 480px) {
+    .herobox h1 {
+        font-size: 30px;
+    }
+  
+    .herobox h2 {
+      justify-content: center;
+      text-align: center;
+      font-size: 34px;
+    }
+  
+    .herobox a {
+        width: 180px;
+        height: 40px;
+        font-size: 12px;
+    }
+  
+    .herobox-auto-slider {
+        width: 90%;
+        height: 70px;
+        
+    }
+  
+    .herobox-slider-holder {
+        width: 250%;
+    }
+  
+    .herobox-slider-holder-1 {
+        width: 30%;
+    }
+  }
+  
+  /* section 1  */
+  @media screen and (max-width: 767px) {
+    .section-1 {
+      height: auto;
+      padding: 20px 0;
+      overflow: hidden;  /* Hide overflow to prevent horizontal scrollbar */
+    }
+  
+    .card-container {
+      height:    90vh;  /* Increased height */
+      position: relative;
+      top: 0;
+      overflow-x: scroll;
+      white-space: nowrap;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scroll-snap-type: x mandatory;
+      padding: 0 5%;  /* Add padding to show curved edges */
+    }
+  
+    .card-container::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
+      width: 90%;  /* Slightly less than 100% to show curved edges */
+      height: 100%;
+      display: inline-block;
+      position: static;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      margin-right: -5%;  /* Negative margin to overlap cards */
+    }
+  
+    .card-1 img, .card-2 img, .card-3 img, .card-4 img, .card-5 img, .card-6 img, .card-7 img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: none;
+      border-radius: 20px;  /* Add border radius */
+    }
+  
+    /* Remove hover effects */
+    .card-1:hover img, .card-2:hover img, .card-3:hover img, .card-4:hover img, .card-5:hover img, .card-6:hover img, .card-7:hover img {
+      transform: none;
+    }
+  
+    .section-1 h2 {
+      position: static;
+      transform: none;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+    .section-1 .line {
+      display: none;
+    }
+  
+    .section-1 h1 {
+      position: static;
+      transform: none;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 15px;
+      opacity: 1;
+    }
+  
+    .section-1 p.p1 {
+      position: static;
+      transform: none;
+      font-size: 22px;
+      text-align: center;
+      margin-top: 25px;
+    }
+  
+    .section-1 p.p2 {
+      position: static;
+      transform: none;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 25px;
+      padding: 0 20px;
+    }
+    .section-1 p.p2 strong {
+        text-align: center;
+    }
+
+    .line h1{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 15px;
+        opacity: 1;
+
+    }
+    
+  }
